@@ -1,5 +1,18 @@
+import os
+import json
 from flask import Flask, render_template
+import firebase_admin
+from firebase_admin import credentials, messaging
+from datetime import datetime
 
+app = Flask(__name__)
+
+firebase_json = os.environ.get("GOOGLE_APPLICATION_CREDENTIALS_JSON")
+
+cred = credentials.Certificate(json.loads(firebase_json))
+firebase_admin.initialize_app(cred)
+
+firebase_admin.initialize_app(cred)
 
 TOKEN_CELULAR = "fcYcnp9YVsv8xGVobWFwZU:APA91bHwDrWeXxZ9pcCpgZ7mb3-iJXNj4WjnlsGr41x5Q81F0iCG1vt76X1drnnXOl-601C45tvGYuVcdcnQJfaATWHsIT5dYBOKjl7oQb7rWVKfT6XtNeU"
 
