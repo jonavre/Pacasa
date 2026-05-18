@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control Familiar</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <header>
+
+        <h1>💰 Control Familiar</h1>
+
+        <nav>
+
+            <button class="nav-btn active" onclick="mostrarHome()">
+                🏠 Home
+            </button>
+
+            <button class="nav-btn" onclick="mostrarCancelados()">
+                ✅ Cancelados
+            </button>
+
+        </nav>
+
+    </header>
+
+    <div class="container">
+
+        <div id="home">
+
+            <div class="resumen">
+
+                <h2>Ingresos</h2>
+
+                <div class="grupo">
+
+                    <h3>👨 Jonaikel</h3>
+
+                    <input type="number" id="jonaikel1" placeholder="Quincena 1">
+                    <input type="number" id="jonaikel2" placeholder="Quincena 2">
+
+                </div>
+
+                <div class="grupo">
+
+                    <h3>👩 Fernanda</h3>
+
+                    <input type="number" id="fernanda1" placeholder="Quincena 1">
+                    <input type="number" id="fernanda2" placeholder="Quincena 2">
+
+                </div>
+
+                <div class="grupo">
+
+                    <h3>👩 Diana</h3>
+
+                    <input type="number" id="diana" placeholder="Salario mensual">
+
+                </div>
+
+                <button onclick="calcularTotal()">
+                    💵 Calcular Dinero
+                </button>
+
+            </div>
+
+            <div class="saldo-box">
+
+                <h2>💰 Dinero Disponible</h2>
+
+                <h1 id="saldo">₡0</h1>
+
+            </div>
+
+            <h2>💳 Pagos Pendientes</h2>
+
+            <div id="lista-pagos"></div>
+
+        </div>
+
+        <div id="cancelados" style="display: none;">
+
+            <h2>✅ Pagos Cancelados</h2>
+
+            <div id="lista-cancelados"></div>
+
+        </div>
+
+    </div>
+
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+
+    <script type="module"
+    src="{{ url_for('static', filename='firebase.js') }}">
+    </script>
+</body>
+</html>

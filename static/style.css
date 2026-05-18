@@ -1,0 +1,114 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background: #111827;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav{
+    margin-top: 15px;
+}
+
+.nav-btn{
+    background: #2563eb;
+    border: none;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.nav-btn.active{
+    background: #16a34a;
+}
+
+.container{
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+.resumen{
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.1);
+}
+
+.grupo{
+    margin-bottom: 25px;
+}
+
+input{
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+button{
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover{
+    opacity: 0.9;
+}
+
+.saldo-box{
+    background: #111827;
+    color: white;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+#saldo{
+    font-size: 45px;
+    color: #22c55e;
+}
+
+.tarjeta{
+    background: white;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 12px;
+    border-left: 8px solid #dc2626;
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.1);
+}
+
+.pagado{
+    border-left: 8px solid #16a34a;
+}
+
+.estado{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.fecha{
+    color: #2563eb;
+    font-weight: bold;
+}
+
+.tarjeta button{
+    background: #2563eb;
+}
